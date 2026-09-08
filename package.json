@@ -1,0 +1,22 @@
+{
+  "name": "blu-osint",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blu OSINT - Cyber Intelligence Command Center",
+  "scripts": {
+    "dev": "node dev.js",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "start": "node dev.js",
+    "build": "npm --prefix client run build",
+    "install:all": "npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": [
+    "osint",
+    "cyber-intelligence",
+    "soc",
+    "threat-intel"
+  ],
+  "author": "",
+  "license": "ISC"
+}

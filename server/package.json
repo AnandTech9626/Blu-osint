@@ -1,0 +1,19 @@
+{
+  "name": "blu-osint-server",
+  "version": "1.0.0",
+  "description": "Blu OSINT - Professional OSINT & Cyber Intelligence Platform Backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^3.3.2",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5"
+  }
+}

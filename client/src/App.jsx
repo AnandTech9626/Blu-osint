@@ -6,7 +6,7 @@ import Investigate from './pages/Investigate.jsx';
 import ThreatIntel from './pages/ThreatIntel.jsx';
 import PasswordCheck from './pages/PasswordCheck.jsx';
 import WiFiPage from './pages/WiFiPage.jsx';
-import IoC from './pages/IoC.jsx';
+
 import Cases from './pages/Cases.jsx';
 import Graph from './pages/Graph.jsx';
 import Timeline from './pages/Timeline.jsx';
@@ -21,7 +21,7 @@ const VIEWS = {
   threat: ThreatIntel,
   password: PasswordCheck,
   wifi: WiFiPage,
-  ioc: IoC,
+
   search: ExaSearch,
   graph: Graph,
   cases: Cases,

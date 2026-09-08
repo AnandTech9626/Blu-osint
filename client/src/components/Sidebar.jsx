@@ -20,7 +20,7 @@ const NAV_SECTIONS = [
     title: 'Investigation',
     items: [
       { id: 'investigate', label: 'Investigate', icon: <TbTarget size={18} />, view: 'investigate' },
-      { id: 'ioc', label: 'Indicator (IOC) Engine', icon: <TbFingerprint size={18} />, view: 'ioc' },
+
       { id: 'password', label: 'Password Audit', icon: <TbShieldLock size={18} />, view: 'password' },
     ],
   },

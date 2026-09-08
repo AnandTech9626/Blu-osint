@@ -6,7 +6,7 @@ const VIEW_METADATA = {
   threat: { section: 'Operations', label: 'Threat Intelligence & CVEs' },
   timeline: { section: 'Operations', label: 'Incident Timeline' },
   investigate: { section: 'Investigation', label: 'Investigate' },
-  ioc: { section: 'Investigation', label: 'Indicator of Compromise (IOC)' },
+
   graph: { section: 'Investigation', label: 'Entity Network Graph' },
   search: { section: 'Investigation', label: 'Deep Web Intelligence' },
   wifi: { section: 'Audit & Sensors', label: 'Wi-Fi & Wireless Intel' },

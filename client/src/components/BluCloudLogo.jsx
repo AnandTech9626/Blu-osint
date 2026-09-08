@@ -1,9 +1,10 @@
 import React from 'react';
+import bcsEmblem from '../assets/bcs-emblem.png';
 
 /**
  * Blu OSINT Logo & Emblem Component
- * Renders the interlocking loop emblem in scalable SVG
- * with Blu OSINT typography and subtitle.
+ * Renders the official Blue Cloud Softech interlocking emblem
+ * (with background removed / transparent) paired with Blu OSINT typography.
  */
 export default function BluCloudLogo({
   variant = 'full', // 'full' | 'compact' | 'icon'
@@ -11,9 +12,9 @@ export default function BluCloudLogo({
   className = '',
 }) {
   const iconSizes = {
-    sm: 26,
+    sm: 28,
     md: 36,
-    lg: 46,
+    lg: 48,
   };
 
   const iconSize = iconSizes[size] || 36;
@@ -28,57 +29,21 @@ export default function BluCloudLogo({
         userSelect: 'none',
       }}
     >
-      {/* Scalable Vector Emblem */}
-      <svg
+      {/* Official Transparent Emblem */}
+      <img
+        src={bcsEmblem}
+        alt="Blu OSINT Logo"
         width={iconSize}
         height={iconSize}
-        viewBox="0 0 120 120"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{ flexShrink: 0, filter: 'drop-shadow(0 2px 8px rgba(37,99,235,0.25))' }}
-      >
-        <defs>
-          <linearGradient id="bluGradLeft" x1="10" y1="30" x2="60" y2="90" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stopColor="#38BDF8" />
-            <stop offset="100%" stopColor="#1D4ED8" />
-          </linearGradient>
-          <linearGradient id="bluGradRight" x1="110" y1="30" x2="60" y2="90" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stopColor="#38BDF8" />
-            <stop offset="100%" stopColor="#1D4ED8" />
-          </linearGradient>
-          <linearGradient id="orangeGrad" x1="60" y1="15" x2="60" y2="105" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stopColor="#FB923C" />
-            <stop offset="100%" stopColor="#EA580C" />
-          </linearGradient>
-        </defs>
-
-        {/* Left Blue Loop (Cloud Wing) */}
-        <path
-          d="M 45 42 C 28 42 16 52 16 64 C 16 76 28 86 45 86 C 53 86 60 82 65 76"
-          stroke="url(#bluGradLeft)"
-          strokeWidth="13"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-
-        {/* Right Blue Loop (Cloud Wing) */}
-        <path
-          d="M 75 42 C 92 42 104 52 104 64 C 104 76 92 86 75 86 C 67 86 60 82 55 76"
-          stroke="url(#bluGradRight)"
-          strokeWidth="13"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-
-        {/* Central Interlocking Orange 'S' Loop */}
-        <path
-          d="M 52 35 C 52 24 60 17 70 17 C 80 17 87 25 87 34 C 87 47 33 63 33 86 C 33 95 40 103 50 103 C 60 103 68 96 68 85"
-          stroke="url(#orangeGrad)"
-          strokeWidth="12"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+        style={{
+          width: iconSize,
+          height: iconSize,
+          flexShrink: 0,
+          objectFit: 'contain',
+          filter: 'drop-shadow(0 2px 8px rgba(37,99,235,0.25))',
+          display: 'block',
+        }}
+      />
 
       {/* Typography */}
       {variant !== 'icon' && (
